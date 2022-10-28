@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="bumdesAPP.hlm.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../App_Themes/Default/StyleSheet1.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+            <table style="width:100%">
+                <tr>
+                    <td style="width:620px">
+                        <asp:ImageButton ID="Image1" CssClass="imgtitle" runat="server" ImageUrl="~/img/logo_bumdes.png" OnClick="Home_Click"/>
+                    </td>
+                    <td style="width:530px">
+                        <div class="dropdown">
+                            <button style="width:80px" formaction="home.aspx" class="dropbtn">Home</button>
+                        </div>
+                        <div class="dropdown">
+                            <button style="width:70px" class="dropbtn">Data</button>
+                            <div class="dropdown-content">
+                              <a href="rekening.aspx">Rekening</a>
+                                <div runat="server" id="navlink_pengguna">
+                                    <a href="semua_pengguna.aspx">Pengguna</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button style="width:110px" class="dropbtn">Transaksi</button>
+                            <div class="dropdown-content">
+                              <a href="transaksi.aspx">Transaksi</a>
+                                <div runat="server" id="navlink_inputjurnal">
+                                    <a href="jurnal.aspx">Input Jurnal</a>
+                                </div>
+                              <a href="detail_jurnal.aspx">Jurnal Umum</a>
+                              <a href="neraca_saldo.aspx">Neraca Saldo</a>
+                              <a href="jurnal_penyesuaian.aspx">Jurnal Penyesuaian</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button formaction="buku_besar.aspx" style="width:120px" class="dropbtn">Buku Besar</button>
+                        </div>
+                        <div class="dropdown">
+                            <button style="width:94px" class="dropbtn">Laporan</button>
+                            <div class="dropdown-content">
+                              <%--<a href="buku_besar.aspx">Buku Besar</a>--%>
+                              <a href="neraca.aspx">Neraca</a>
+                              <a href="laba_rugi.aspx">Laba Rugi</a>
+                              <a href="perubahan_modal.aspx">Perubahan Modal</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="width: 216px">
+                        <div class="dropdown">
+                            <button class="dropbtn">Logout</button>
+                            <div class="dropdown-content">
+                                <div style="padding: 14px 16px; font-size: 14px; font-family: inherit; color: #666">
+                                    Hi, <asp:Label ID="whoami" runat="server" Text="" ></asp:Label>
+                                </div>
+                                <asp:Button ForeColor="DarkRed" ID="logoutbtn" OnClick="logoutbtn_Click" runat="server" Text="Logout" BorderStyle="None" CssClass="dropdown-content-asp" />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer" style="line-height: 1.6">
+            <div style="float:left; padding-left: 10%; padding-top:30px; padding-bottom:40px">
+                <img src="../img/logo.png" style="height:80px;" />
+                    <br /><br />
+                <a style="font-weight:600; color:#fff">©2020 Bagusrahmat Project</a><br />
+                Jl. Sardi Nitihardjo, Negara Ratu, Natar, Lampung Selatan, Lampung.<br />
+                082281174203 (Havez Annamir)
+            </div>
+            <div style="float: right; padding-right: 10%; padding-top:40px; padding-bottom:40px; width: 25%;">
+                Social Media:<br />
+                <a href="https://www.instagram.com/tunasmekarnegararatu/" target="_blank"><img src="../img/insta.png" style="height:40px" /></a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

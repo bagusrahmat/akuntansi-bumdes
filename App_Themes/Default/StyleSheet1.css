@@ -1,0 +1,225 @@
+﻿body {
+    margin: 0 auto;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    position: relative;
+    background-color: #fff;
+}
+
+.formlogin {
+    text-align:center;
+    margin: 0 auto;
+    margin-top:50px;
+    box-shadow: #ccc 1px 1px 6px 1px;
+    border-radius: 8px;
+    padding-left: 2%;
+    padding-right:2%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border: 1px solid #ccc;
+    background: #fff;
+    min-height: 540px;
+    max-height: 540px;
+    width:22%;
+    background-color:#fff;
+}
+
+.navkiri {
+    float: left;
+    width: 30%;
+}
+
+.imgtitle {
+    width: 195px;
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 30%;
+}
+
+.navtengah {
+    text-align: right;
+    float: left;
+    width: 45%;
+}
+
+.navkanan {
+    text-align: right;
+    float:right;
+    width: 15%;
+}
+
+
+.navbutton {
+    background-color: #0085ca;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    padding-top: 0px;
+    height: 54px;
+    width: 80px;
+}
+    
+.navbutton:hover {
+    background-color: #0064aa;
+    border: none;
+}
+
+.footer{
+    color: #ddd;
+    width: 100%;
+    position:absolute;
+    min-height: 80px;
+    background-color: #333;
+}
+
+.body {
+    overflow-y:no-content;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    color: #555;
+    min-height: 500px;
+}
+
+.footergridview{
+    border-color: transparent;
+}
+
+/* Navbar container */
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    background-color: #0085ca;
+    height: 56px;
+    box-shadow: 0px 1px 5px #aaa;
+    z-index:100;
+}
+
+    /* Links inside the navbar */
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+        width: 90px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        height: 56px;
+        background-color: inherit;
+        margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #0064aa;
+    }
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    margin-top: -3px;
+    display: none;
+    position: fixed;
+    width: 180px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #ddd;
+    border: 3px;
+    min-width: 160px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: #444;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: #666;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content-asp {
+        float: none;
+        color: #666;
+        background-color: #fff;
+        width:inherit;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #eee;
+        }
+
+        .dropdown-content-asp:hover {
+            background-color: #eee;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cssgridview {
+    min-width: 100%;
+    font-size: inherit;
+    width: 100%;
+    border: solid 1px #ddd;
+    border-left: solid 0 #fff;
+    border-right: solid 0 #fff;
+}
+
+.cssgridview th {
+    padding-left: 15px;
+    height: 36px;
+    color: #444;
+    font-weight: 500;
+    background-color: #eee;
+    border-left: solid 0 #eee;
+    border-right: solid 0 #eee;
+}
+
+.cssgridview td {
+    padding-left: 15px;
+    padding-right: 25px;
+    height: 36px;
+    color: #444;
+}
+
+.cssgridview .alt {
+    background-color: #fafafa;
+    border-left: solid 0 #fafafa;
+    border-right: solid 0 #fafafa;
+}
+
+
+.textboxstyle {
+    color: #555555;
+    padding-left: 12px;
+    border-radius: 3px;
+    background-color: #fff;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+}
